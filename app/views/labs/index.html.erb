@@ -1,0 +1,30 @@
+<div class="container">
+  <br>
+  <h1 class="h2 mb-3">Labs</h1>
+  <br>
+  <div class="table-responsive">
+    <table class="table">
+      <div class="group">
+      </div>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Position</th>
+          <th scope="col">Website</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @labs.each do |lab| %>
+          <tr>
+            <td><%= lab.name %></td>
+            <td><%= lab.position %></td>
+            <td><%= link_to "Link", lab.website %></td>
+            <td>
+              <%= link_to "詳細", lab_path(lab), class: "btn btn-info"%>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="container professors">
+  <br>
+  <%= link_to("返回", professors_path, class: "btn btn-warning")%>
+  <br>
+  <br>
+  <h1 class="h2 mb-3"><%= @professor.name %></h1>
+  <br>
+  <div class="table-responsive">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>id</td>
+          <td><%= @professor.id %></td>
+        </tr>
+        <tr>
+          <td>title</td>
+          <td><%= @professor.title %></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><%= @professor.email %></td>
+        </tr>
+        <tr>
+          <td>Office</td>
+          <td><%= @professor.office %></td>
+        </tr>
+        <tr>
+          <td>Lab</td>
+          <td><%= link_to @professor.lab.name, lab_path(@professor.lab)%></td>
+        </tr>
+        <tr>
+          <td>Created at</td>
+          <td><%= @professor.created_at.in_time_zone("Taipei") %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

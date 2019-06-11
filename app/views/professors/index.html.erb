@@ -1,0 +1,34 @@
+<div class="container">
+  <br>
+  <h1 class="h2 mb-3">Professors</h1>
+  <br>
+  <div class="table-responsive">
+    <table class="table">
+      <div class="group">
+      </div>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Title</th>
+          <th scope="col">Office</th>
+          <th scope="col">Email</th>
+          <th scope="col">Lab</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @professors.each do |professor| %>
+          <tr>
+            <td><%= professor.name %></td>
+            <td><%= professor.title %></td>
+            <td><%= professor.office %></td>
+            <td><%= professor.email %></td>
+            <td><%= link_to professor.lab.name, lab_path(professor.lab)%></td>
+            <td>
+              <%= link_to "詳細", professor_path(professor), class: "btn btn-info"%>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
