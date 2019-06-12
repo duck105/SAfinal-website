@@ -14,9 +14,9 @@ Lab.create!([
 ])
 
 Professor.create!([
-  {name: "PiePie", title: "Professor", office: "512", email: "piepie@csie.ntu.edu.tw", lab_id: "1"}
-  {name: "Qmao", title: "Professor & Department head", office: "527", email: "qmao@csie.ntu.edu.tw", lab_id: "1"}
-  {name: "Abortion King", title: "Associate Professor", office: "412", email: "chinba@csie.ntu.edu.tw", lab_id: "3"}
-  {name: "Ijen", title: "Professor", office: "511", email: "ijen@csie.ntu.edu.tw", lab_id: "4"}
-  {name: "Arvin", title: "Associate Professor", office: "310", email: "arvin@csie.ntu.edu.tw", lab_id: "5"}  
+  {name: "PiePie", title: "Professor", office: "512", email: "piepie@csie.ntu.edu.tw", lab_id: "1"},
+  {name: "Qmao", title: "Professor & Department head", office: "527", email: "qmao@csie.ntu.edu.tw", lab_id: "1"},
+  {name: "Abortion King", title: "Associate Professor", office: "412", email: "chinba@csie.ntu.edu.tw", lab_id: "3"},
+  {name: "Ijen", title: "Professor", office: "511", email: "ijen@csie.ntu.edu.tw", lab_id: "4"},
+  {name: "Arvin", title: "Associate Professor", office: "310", email: "arvin@csie.ntu.edu.tw", lab_id: "5"},  
 ])
